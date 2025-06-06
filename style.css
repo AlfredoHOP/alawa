@@ -11,7 +11,7 @@ h1, h2 {
 }
 a {
   display: block;
-  margin-top: 20px;
+  margin: 10px auto;
   color: #ff6600;
   text-decoration: none;
 }
@@ -31,4 +31,12 @@ th, td {
 }
 .observacion {
   background-color: #ffffcc;
+}
+nav a {
+  font-size: 18px;
+  margin: 8px;
+  display: inline-block;
+}
+img {
+  margin-top: 10px;
 }

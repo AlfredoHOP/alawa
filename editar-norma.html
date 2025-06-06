@@ -6,12 +6,18 @@
   <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-  <h2>Editar Límites Permitidos</h2>
+  <h2>Editar Límites de Norma</h2>
   <form>
-    <label>DBO5 (mg/L):</label><input type='number' value='250'><br>
-    <label>pH:</label><input type='number' step='0.1' value='7'><br>
+    <label>Tipo de norma:</label>
+    <select>
+      <option selected>Sin PTAS</option>
+      <option>Con PTAS</option>
+    </select><br><br>
+    <label>DBO5:</label><input type='number' value='250'><br>
     <label>Nitrógeno Amoniacal:</label><input type='number' value='10'><br>
-    <button type='submit'>Guardar</button>
+    <label>Aceites y Grasas:</label><input type='number' value='10'><br>
+    <label>pH:</label><input type='number' value='7'><br>
+    <button type='submit'>Guardar Cambios</button>
   </form>
   <a href='index.html'>Volver</a>
 </body>

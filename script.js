@@ -1,1 +1,1 @@
-console.log('ALAWA cargado correctamente');
+console.log('ALAWA MVP cargado');

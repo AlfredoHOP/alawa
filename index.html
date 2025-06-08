@@ -1,16 +1,44 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>ALAWA | Inicio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>ALAWA SaaS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Bienvenido a ALAWA</h1>
   <nav>
-    <a href="dashboard.html">📊 Ver Dashboard</a>
-    <a href="cargar.html">📥 Cargar Datos</a>
-    <a href="editar.html">🛠 Editar Norma</a>
+    <button onclick="mostrarSeccion('dashboard')">Dashboard</button>
+    <button onclick="mostrarSeccion('cargar')">Cargar Datos</button>
+    <button onclick="mostrarSeccion('editar')">Editar Norma</button>
   </nav>
+
+  <section id="dashboard" class="seccion">
+    <h2>Dashboard</h2>
+    <div id="datosDashboard">Cargando...</div>
+  </section>
+
+  <section id="cargar" class="seccion" style="display:none;">
+    <h2>Cargar Datos</h2>
+    <form>
+      <label>Laboratorio:</label><input type="text"><br>
+      <label>Fecha:</label><input type="date"><br>
+      <label>Archivo:</label><input type="file"><br>
+      <button type="submit">Subir</button>
+    </form>
+  </section>
+
+  <section id="editar" class="seccion" style="display:none;">
+    <h2>Editar Norma</h2>
+    <form>
+      <label>DBO5:</label><input type="number" value="250"><br>
+      <label>N. Amoniacal:</label><input type="number" value="10"><br>
+      <label>Aceites y Grasas:</label><input type="number" value="10"><br>
+      <button>Guardar</button>
+    </form>
+  </section>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,28 +1,28 @@
 
 body {
-  font-family: sans-serif;
-  background: #f4faff;
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
 }
-h1, h2 {
-  color: #0077cc;
+nav {
+  margin-bottom: 20px;
 }
-nav a {
-  display: inline-block;
-  margin: 10px;
-  padding: 8px 16px;
-  background: #0077cc;
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: #007acc;
   color: white;
-  text-decoration: none;
+  border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 table {
-  margin: 20px auto;
+  margin: 0 auto;
   border-collapse: collapse;
   width: 90%;
 }
 th, td {
-  padding: 10px;
   border: 1px solid #ccc;
+  padding: 8px;
 }
